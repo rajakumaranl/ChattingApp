@@ -1,0 +1,1 @@
+This is my first test how to add new file to remote repository in git
