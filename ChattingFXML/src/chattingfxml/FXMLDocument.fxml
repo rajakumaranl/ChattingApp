@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="275.0" prefWidth="300.0" stylesheets="@Login.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chattingfxml.FXMLDocumentController">
+    <children>
+      <TextField fx:id="userName" layoutX="125.0" layoutY="67.5" promptText="username" />
+      <PasswordField fx:id="password" layoutX="125.0" layoutY="117.5" promptText="password" />
+      <Label layoutX="36.0" layoutY="70.0" text="User Name" textAlignment="CENTER" />
+      <Label layoutX="36.0" layoutY="120.0" text="Password" textAlignment="CENTER" />
+      <Button fx:id="login" layoutX="180.0" layoutY="179.0" onAction="#performLogin" prefHeight="25.0" prefWidth="59.0" text="Login" textFill="#2302f5" />
+      <Button fx:id="signup" layoutX="36.0" layoutY="179.0" onAction="#createNewUser" prefHeight="25.0" text="Create New User" textFill="#f84c02" />
+   </children>
+</AnchorPane>

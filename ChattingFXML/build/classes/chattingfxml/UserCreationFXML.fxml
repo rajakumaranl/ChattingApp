@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chattingfxml.UserCreationFXMLController">
+    <stylesheets>
+        <URL value="@Login.css" />
+    </stylesheets>
+   <children>
+
+      <Pane layoutX="14.0" layoutY="14.0" prefHeight="375.0" prefWidth="573.0" AnchorPane.bottomAnchor="11.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="14.0">
+        <children>
+                  <Label alignment="CENTER" layoutX="129.0" layoutY="55.0" prefHeight="25.0" prefWidth="77.0" text="User Name *" />
+      <Label layoutX="130.0" layoutY="105.0" prefHeight="25.0" prefWidth="77.0" text="Name" />
+      <Label layoutX="130.0" layoutY="155.0" prefHeight="25.0" prefWidth="77.0" text="Password *" />
+      <Label layoutX="130.0" layoutY="205.0" prefHeight="17.0" prefWidth="77.0" text="E-Mail" />
+      <TextField fx:id="userName" layoutX="245.0" layoutY="55.0" prefHeight="25.0" prefWidth="198.0" promptText="User Name" />
+      <TextField fx:id="fullName" layoutX="245.0" layoutY="105.0" prefHeight="25.0" prefWidth="198.0" promptText="Name" />
+      <PasswordField fx:id="password" layoutX="245.0" layoutY="155.0" prefHeight="25.0" prefWidth="198.0" promptText="Password" />
+      <TextField fx:id="eMail" layoutX="245.0" layoutY="205.0" prefHeight="25.0" prefWidth="198.0" promptText="E-mail Address" />
+      <Button fx:id="createNewUserBtn" layoutX="300.0" layoutY="305.0" mnemonicParsing="false" onAction="#createNewUser" prefHeight="26.0" prefWidth="62.0" text="Create" />
+      <Button fx:id="cancelBtn" layoutX="170.0" layoutY="305.0" mnemonicParsing="false" onAction="#cancelPage" prefHeight="23.0" prefWidth="62.0" text="Cancel" />
+      <Button fx:id="resetBtn" layoutX="430.0" layoutY="305.0" mnemonicParsing="false" onAction="#resetPage" prefHeight="23.0" prefWidth="62.0" text="Reset" />
+            <Label layoutX="27.0" layoutY="310.0" prefHeight="17.0" prefWidth="130.0" styleClass="labelInstructions" stylesheets="@Login.css" text="* Mandatory Fields" textFill="#f41b07" />
+            <Label layoutX="130.0" layoutY="255.0" prefHeight="25.0" prefWidth="77.0" text="Server IP *" />
+            <TextField layoutX="245.0" layoutY="255.0" prefHeight="25.0" prefWidth="198.0" text="10.10.1.113" />
+            <Label fx:id="alertmsg" layoutX="245.0" layoutY="25.0" prefHeight="17.0" prefWidth="198.0" text="  " />
+            <Label layoutX="27.0" layoutY="17.0" prefHeight="17.0" prefWidth="110.0" styleClass="labelHeading" text="User Creation" textFill="#02f442" />
+        </children>  
+      </Pane>
+   </children>
+</AnchorPane>

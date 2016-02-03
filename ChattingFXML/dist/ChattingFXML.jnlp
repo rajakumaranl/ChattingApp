@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="ChattingFXML.jnlp">
+  <information>
+    <title>ChattingFXML</title>
+    <vendor>rajakumaran</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="ChattingFXML.jar" size="76585" download="eager" />
+    <jar href="lib\commons-codec-1.9.jar" size="263965" download="eager" />
+    <jar href="lib\commons-collections-3.2.1.jar" size="575389" download="eager" />
+    <jar href="lib\commons-io-2.4.jar" size="185140" download="eager" />
+    <jar href="lib\commons-lang3-3.2.1.jar" size="385091" download="eager" />
+    <jar href="lib\commons-logging-1.1.3.jar" size="62050" download="eager" />
+    <jar href="lib\cssparser-0.9.13.jar" size="354859" download="eager" />
+    <jar href="lib\htmlunit-2.14.jar" size="1441829" download="eager" />
+    <jar href="lib\htmlunit-core-js-2.14.jar" size="1025632" download="eager" />
+    <jar href="lib\httpclient-4.3.2.jar" size="587762" download="eager" />
+    <jar href="lib\httpcore-4.3.1.jar" size="282285" download="eager" />
+    <jar href="lib\httpmime-4.3.2.jar" size="37148" download="eager" />
+    <jar href="lib\jetty-http-8.1.14.v20131031.jar" size="96122" download="eager" />
+    <jar href="lib\jetty-io-8.1.14.v20131031.jar" size="104219" download="eager" />
+    <jar href="lib\jetty-util-8.1.14.v20131031.jar" size="287680" download="eager" />
+    <jar href="lib\jetty-websocket-8.1.14.v20131031.jar" size="127627" download="eager" />
+    <jar href="lib\jna-3.5.2.jar" size="692070" download="eager" />
+    <jar href="lib\jsoup-1.7.3.jar" size="297387" download="eager" />
+    <jar href="lib\nekohtml-1.9.20.jar" size="125039" download="eager" />
+    <jar href="lib\platform-3.5.2.jar" size="1192357" download="eager" />
+    <jar href="lib\sac-1.3.jar" size="15808" download="eager" />
+    <jar href="lib\serializer-2.7.1.jar" size="278281" download="eager" />
+    <jar href="lib\smack.jar" size="347422" download="eager" />
+    <jar href="lib\smackx.jar" size="706189" download="eager" />
+    <jar href="lib\vlcj-2.4.1.jar" size="347263" download="eager" />
+    <jar href="lib\vlcj-3.0.1-javadoc.jar" size="1564195" download="eager" />
+    <jar href="lib\vlcj-3.0.1-sources.jar" size="368490" download="eager" />
+    <jar href="lib\vlcj-3.0.1-test-sources.jar" size="214311" download="eager" />
+    <jar href="lib\vlcj-3.0.1-tests.jar" size="391204" download="eager" />
+    <jar href="lib\vlcj-3.0.1.jar" size="333718" download="eager" />
+    <jar href="lib\vorbisspi1.0.2.jar" size="13776" download="eager" />
+    <jar href="lib\xalan-2.7.1.jar" size="3176148" download="eager" />
+    <jar href="lib\xercesImpl-2.11.0.jar" size="1367760" download="eager" />
+    <jar href="lib\xml-apis-1.4.01.jar" size="220536" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="ChattingFXML" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="chattingfxml.ChattingFXML"  name="ChattingFXML" />
+  <update check="always"/>
+</jnlp>

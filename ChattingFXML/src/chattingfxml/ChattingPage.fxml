@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="576.0" prefWidth="679.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chattingfxml.ChattingPageController">
+   <children>
+      <BorderPane layoutX="11.0" layoutY="18.0" prefHeight="363.0" prefWidth="481.0" AnchorPane.bottomAnchor="19.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="18.0">
+          <top>
+            <HBox layoutX="109.0" layoutY="302.0" prefHeight="50.0" prefWidth="397.0" spacing="20.0" BorderPane.alignment="CENTER">
+                <children>
+                    <Label fx:id="chatHistory" alignment="CENTER" layoutX="3.0" layoutY="3.0" prefHeight="19.0" prefWidth="38.0" text="Chat History" textAlignment="CENTER">
+                    <padding>
+                        <Insets top="2.0" />
+                    </padding>
+                    <HBox.margin>
+                        <Insets left="15.0" top="7.0" />
+                    </HBox.margin>
+                    </Label>
+                    <TextField fx:id="toAddress" layoutX="164.0" layoutY="41.0" prefHeight="25.0" prefWidth="193.0" promptText="To Address">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets top="7.0" />
+                     </HBox.margin></TextField>
+                  
+                  <Label fx:id="BuddyList" alignment="CENTER" layoutX="3.0" layoutY="3.0" prefHeight="19.0" prefWidth="67.0" text="Buddy List" textAlignment="CENTER">
+                    <padding>
+                        <Insets top="2.0" />
+                    </padding>
+                    <HBox.margin>
+                        <Insets left="15.0" top="7.0" />
+                    </HBox.margin>
+                    </Label>
+                  <TextField fx:id="newName" prefHeight="25.0" prefWidth="202.0" promptText="new buddy">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets top="7.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Button mnemonicParsing="false" onAction="#addName" prefHeight="25.0" prefWidth="51.0" text="ADD">
+                     <HBox.margin>
+                        <Insets right="3.0" top="7.0" />
+                     </HBox.margin>
+                  </Button>                       
+                </children>
+            </HBox>
+          </top>
+          <center>
+             <TextArea fx:id="chatArea" layoutX="113.0" layoutY="116.0" prefHeight="295.0" prefWidth="516.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets></TextArea>
+         </center>
+          <right>
+            <ListView fx:id="listView" prefHeight="298.0" prefWidth="253.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets></ListView>
+         </right>
+          
+          <bottom>
+             
+                  <HBox layoutX="109.0" layoutY="302.0" prefHeight="65.0" prefWidth="660.0" spacing="20.0">
+			<children>
+				<Label fx:id="userName" layoutX="3.0" layoutY="3.0" prefHeight="19.0" prefWidth="34.0" text="YOU" textAlignment="CENTER">
+				<padding>
+                  <Insets top="2.0" />
+				</padding>
+				<HBox.margin>
+                  <Insets left="15.0" top="10.0" />
+				</HBox.margin>
+				</Label>
+            <TextField fx:id="toMsg" prefHeight="30.0" prefWidth="263.0" promptText="Type your message">
+                     <HBox.margin>
+                        <Insets top="7.0" />
+                     </HBox.margin></TextField>
+            <Button fx:id="sendBtn" contentDisplay="CENTER" graphicTextGap="5.0" mnemonicParsing="false" onAction="#sendMessage" prefHeight="41.0" prefWidth="78.0" text="SEND" textAlignment="CENTER" textFill="#eb0e0e" textOverrun="WORD_ELLIPSIS">
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox> 
+   </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>
