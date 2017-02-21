@@ -31,6 +31,7 @@ public class ChattingFXML extends Application {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        //calling the launch method to show the login page
         launch(args);
     }
     
